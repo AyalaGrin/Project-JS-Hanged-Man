@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>recordWins</title>
+    <link rel="stylesheet" href="./stayle.css">
+</head>
+<body>
+    <div class="hangman-container"> <h1>היסטוריית ניצחונות</h1>
+        <!-- הטבלה תיווצר בזמן הטעינה על ידי קוד הגאבה סקריפט. כיון שהשיאים הם משהו דינמי ולא ידוע אני צריכה להכניס אותם לטבלה אז גם הטבלה תהיה דינמית וכך כשהיא תיווצר אני יכניס לה מיד ערכים -->
+        <div id="wins-container">
+            </div>
+        <!-- מקום לכפתורים -->
+        <div class="buttons-container-bottom">
+            <button id="clear-wins" onclick="clearWins()">נקה היסטוריית ניצחונות</button>
+            <button id="record-wins"><a href="./page.html">חזרה למשחק</a></button>
+        </div>
+    </div>
+    <!-- חיבור לקובץ גאבה סקריפט -->
+    <script src="./records.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>משחק זיכרון אימוג'י</title>
+    <link rel="stylesheet" href="./hw.css">
+</head>
+<body>
+
+    <h1>מצאו את כל התמונות הזהות!</h1>
+    
+    <div class="stats">
+        <div>חפשו את: <span id="target">?</span></div>
+        <div>הצלחות: <span id="wins">0</span></div>
+        <div>כשלונות: <span id="fails">0</span></div>
+        <button onclick="startGame()">משחק חדש</button>
+    </div>
+
+    <div id="board"></div>
+    <h2 id="msg"></h2>
+
+    <script src="./hw.js"></script>
+
+</body>
+</html>

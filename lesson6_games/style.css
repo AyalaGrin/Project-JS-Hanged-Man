@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Assistant', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    direction: rtl;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.main-title {
+    position: absolute;
+    top: 1px;
+    margin-bottom: 25px;
+    font-size: 4rem;
+    color: white;
+    text-shadow: 0 0 20px rgba(0, 251, 255, 0.8);
+}
+
+/* רקע צבעוני ומלהיב לדף הבית */
+.home-bg {
+    background-image: linear-gradient(135deg, rgba(45, 11, 82, 0.7), rgba(20, 20, 20, 0.8)), 
+    url('https://images.unsplash.com/photo-1534423861386-85a16f5d13fd?q=80&w=2070&auto=format&fit=crop');
+}
+
+/* דף ההרשמה יקבל את התמונה הקודמת שאהבת */
+.auth-bg {
+    background-image: linear-gradient(135deg, rgba(26, 42, 108, 0.6), rgba(0, 0, 0, 0.7)), 
+    url('https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop');
+}
+
+/* שאר העיצוב של ה-Glass Card והכפתורים נשאר כפי שהיה כדי לשמור על הסטייל המגניב */
+
+/* כרטיס הזכוכית - הפעם עם הילה צבעונית */
+.glass-card {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 30px;
+    padding: 50px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37), 0 0 20px rgba(0, 255, 255, 0.2);
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    /* ... שאר ההגדרות שלך ... */
+    height: auto;             /* מאפשר לתיבה לגדול לפי התוכן */
+    max-height: 90vh;         /* מונע מהתיבה להיות גבוהה יותר מהמסך */
+    overflow-y: auto;         /* אם יש המון משחקים, יופיע פס גלילה פנימי */
+    padding: 30px;            /* קצת פחות פדינג כדי לחסוך מקום */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+margin-top: 37px;
+}
+
+h1 {
+    color: #fff;
+    font-size: 3rem;
+    margin-bottom: 5px;
+    font-weight: 900;
+    text-shadow: 0 0 10px #00fbff, 0 0 20px #00fbff;
+}
+
+.subtitle {
+    color: #e0e0e0;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+}
+
+/* שדות קלט שקופים למחצה עם מסגרת זוהרת */
+.input-group {
+    margin-bottom: 15px;
+}
+/* עיצוב כללי לתיבות טקסט (כמו שהיה לך בהרשמה) */
+input {
+    width: 90%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #333; /* צבע טקסט כהה */
+    font-size: 1rem;
+}
+
+/* עיצוב ספציפי לדף ההתחברות כדי שיהיה "נקי" יותר */
+.login-input {
+    background: white;
+    border: 2px solid #6c63ff; /* מסגרת דקה בצבע הכפתור */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* טיפול בבעיה שלא רואים את הטקסט כשכותבים סיסמה */
+input[type="password"] {
+    letter-spacing: 0.2em; /* נותן רווח יפה לנקודות של הסיסמה */
+    color: #000; /* מוודא שהנקודות שחורות ובולטות */
+}
+
+input::placeholder {
+    color: #ddd;
+}
+
+input:focus {
+    background: rgba(255, 255, 255, 0.2);
+    border-color: #00fbff;
+    box-shadow: 0 0 15px rgba(0, 251, 255, 0.4);
+}
+
+/* כפתור "גיימינג" זוהר */
+.btn-primary {
+    width: 100%;
+    padding: 18px;
+    background: linear-gradient(90deg, #ff00cc, #3333ff);
+    color: white;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.3rem;
+    font-weight: 800;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+    box-shadow: 0 0 15px rgba(255, 0, 204, 0.5);
+    margin-top: 10px;
+}
+
+.btn-primary:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px rgba(51, 51, 255, 0.7);
+    letter-spacing: 2px;
+}
+
+.link-alt {
+    display: block;
+    margin-top: 25px;
+    color: #00fbff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.95rem;
+    text-shadow: 0 0 5px rgba(0, 251, 255, 0.5);
+}
+
+.link-alt:hover {
+    color: #ff00cc;
+}
+
+/* תצוגת שם משתמש בסגנון "Level Up" */
+#user-banner {
+    background: linear-gradient(90deg, rgba(0, 251, 255, 0.2), rgba(255, 0, 204, 0.2));
+    color: #fff;
+    padding: 8px 25px;
+    border-radius: 10px;
+    border: 1px solid #00fbff;
+    margin-bottom: 25px;
+    display: inline-block;
+}

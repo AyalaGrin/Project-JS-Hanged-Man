@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>איש תלוי</title>
+    <link rel="stylesheet" href="../איש_תלוי/stayle.css">
+</head>
+<body>
+   <div class="hangman-container">
+    <h1>משחק האיש התלוי</h1>
+    <!-- איזור שתופיע התמונה שתכוסה בכל הדיבים האלה. יש 9 דיבים כי יש אפשרות ל 9 פסילות -->
+    <div class="image" id="failedImg">
+        <div class="image-part" id="img1"></div>
+        <div class="image-part" id="img2"></div>
+        <div class="image-part" id="img3"></div>
+        <div class="image-part" id="img4"></div>
+        <div class="image-part" id="img5"></div>
+        <div class="image-part" id="img6"></div>
+        <div class="image-part" id="img7"></div>
+        <div class="image-part" id="img8"></div>
+        <div class="image-part" id="img9"></div>
+    </div>
+
+    <div id="word-display" ></div>
+<!-- המקלדת הצפה. האותיות יווצרו עם הטעינה על ידי קוד הגאבה סקריפט -->
+    <div id="keyboard-container"></div>
+</div>
+<!-- כפתורים עם אפשרויות שונות -->
+<div class="buttons-container">
+    <!-- מנקה את הלוח מהמילה והמשחק שהתחילו -->
+    <button id="restart"  onclick="resetgame()">התחל מחדש</button> 
+    <!-- חוזר חזרה לדף הבית -->
+    <button id="exit"><a href="../home.html">יציאה</a></button>
+    <!-- ניתוב לדף השיאים. דף נפרד שמראה טבלה עם 3 שיאים במשחק איש תלוי -->
+ <button id="record-wins"><a href="./recordWins.html">טבלת השיאים</a></button>
+
+</div>
+<!-- חיבור לקובץ גאבה סקריפט -->
+    <script src="./script.js"></script>
+</body>
+</html>

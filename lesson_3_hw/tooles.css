@@ -1,0 +1,76 @@
+/* עיצוב כללי לדף */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    direction: rtl; /* יישור לימין */
+    background-color: #f4f4f9;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+/* עיצוב הדיב של כל משימה */
+.task-card {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 10px;
+    width: 50%;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+/* כותרות בתוך המשימה */
+.task-title {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 1.2em;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 5px;
+}
+
+/* עיצוב שדה הקלט - שיהיה מוסתר כברירת מחדל */
+.task-input {
+    width: 90%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  /* display: none;   מוסתר בהתחלה */
+}
+
+/* עיצוב הכפתורים */
+button {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 5px;
+}
+button:disabled {
+    background-color: #cccccc; /* צבע אפור */
+    color: #666666;           /* צבע טקסט חלש */
+    cursor: not-allowed;      /* משנה את הסמן של העכבר לסימן של "אסור" */
+}
+button:hover {
+    background-color: #45a049;
+}
+
+/* כפתור שינוי צבע בתחתית הדף */
+#bg-change-btn {
+    margin-top: 30px;
+    text-align: left;
+    padding: 12px 25px;
+    background-color: #45a049;
+    font-weight: bold;
+}
+
+/* עיצוב לטקסט שמוצג אחרי האישור */
+.task-display-text {
+    font-weight: bold;
+    color: #555;
+}

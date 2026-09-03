@@ -1,0 +1,29 @@
+body { 
+    text-align: center; 
+    background-color: #f0f5ff; 
+    font-family: sans-serif; 
+}
+.stats { 
+    display: flex; 
+    justify-content: center; 
+    gap: 20px; 
+    background: white; 
+    padding: 15px; 
+    border-radius: 10px; 
+    width: 60%; 
+    margin: auto; 
+}
+#board { 
+    display: grid; 
+    grid-template-columns: repeat(10, 50px); 
+    gap: 5px; 
+    justify-content: center; 
+    margin-top: 20px; 
+}
+.emoji-btn { 
+    font-size: 30px; 
+    cursor: pointer; 
+    border: 1px solid #eee; 
+    background: white; 
+    border-radius: 5px; 
+}

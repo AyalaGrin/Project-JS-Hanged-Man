@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <link rel="stylesheet" href="./style.css">
+
+    <title>הרשמה</title>
+</head>
+<body class="auth-bg">
+    <div class="glass-card">
+        <h1>הצטרף אלינו</h1>
+        <p class="subtitle">צור חשבון חדש </p>
+        <!-- טופס שיכיל פרטי הרשמה -->
+        <form>
+            <div class="input-group">
+                <input type="text" id="name" placeholder="שם פרטי">
+            </div>
+            <div class="input-group">
+                <input type="text" id="family-name" placeholder="שם משפחה">
+            </div>
+            <div class="input-group">
+                <input type="email" id="email" placeholder="אימייל">
+                <!-- מקום להופעת הודעת שגיאה במייל אם יש -->
+<p id="email-error" style="color: red; font-size: 12px; margin: 2px 0;"></p>
+            </div>
+            <div class="input-group">
+                <input type="password" id="password" placeholder="סיסמה">
+                <!-- מקום להופעת הודעת שגיאה בסיסמא אם יש -->
+<p id="pass-error" style="color: red; font-size: 12px; margin: 2px 0;"></p>
+            </div>
+            
+            <!-- בלחיצה על הכפתור יעביר לפונקציה ההרשמה שתבדוק אם הוא כבר קיים או לא -->
+            <button type="button" class="btn-primary" onclick="registerUser()">להרשמה</button>
+            
+        <a href="./home.html">חזרה לדף הבית</a> <!-- ניתוב לדף בית -->
+
+        </form>
+    </div>
+<!-- חיבור לקובץ גאבה סקריפט -->
+    <script src="./script.js"></script> 
+</body>
+</html>
+
+
+

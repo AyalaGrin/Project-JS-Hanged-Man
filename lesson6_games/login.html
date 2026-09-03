@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>התחברות למערכת</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body class="auth-bg"> 
+    <div class="glass-card">
+        <h1>התחברות</h1>
+        <!-- כיון שהוא רוצה להתחבר יש לו כבר חשבון לכן ברוך השב.... -->
+        <p class="subtitle">ברוך השב!</p>
+        <!-- מקום להזין את האימייל והסיסמה שלו כדי להתחבר -->
+        <div class="input-group">
+            <input type="email" id="email" placeholder="אימייל">
+            <!-- מקום להציג שגיאות אימייל אם יש -->
+            <p id="email-error" style="color: red; font-size: 12px; margin: 2px 0;"></p>
+
+        </div>
+        <div class="input-group">
+            <input type="password" id="password" placeholder="סיסמה">
+            <!-- מקום להציג שגיאות סיסמה אם יש -->
+            <p id="pass-error" style="color: red; font-size: 12px; margin: 2px 0;"></p>
+
+        </div>
+        <!-- בלחיצה על הכפתור ישלח לפונקציה שבודקת אם הוא אכן קיים במאגר ויכול להתחבר -->
+        <button class="btn-primary" onclick="loginUser()">התחבר</button>
+        
+        <!-- אפשרות להרשמה למי שעדיין לא רשום -->
+        <p style="margin-top: 20px;">
+            עוד לא רשומה? <a href="./הרשמה.html" class="link-alt">להרשמה כאן</a>
+        </p>
+    </div>
+<!-- חיבור לקובץ גאבה סקריפט -->
+<script src="./script.js"></script>
+</body>
+</html>

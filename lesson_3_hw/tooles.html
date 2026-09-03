@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./tooles.css">
+</head>
+<body>
+    <h1>משימות לשבת קודש</h1>
+
+
+    <div id="b1" class="task-card">
+<p class="task-title" >לקנות חלות</p>
+<p class="task-title" >שעה: 8:00</p>
+<button  class="chang" onclick="task_input(1)">עריכה</button>
+<button hidden class="enter" onclick="task_display_text(1)" >אישור</button>
+<input  hidden type="text" class="task-input" placeholder="שם המבצע "><br>
+<span hidden class="task-display-text">שובץ!</span>
+
+    </div>
+ <div id="b2" class="task-card">
+<p class="task-title" > לאפות דגים</p>
+<p class="task-title" >שעה: 8:30</p>
+<button class="chang"  onclick="task_input(2)" >עריכה</button>
+<button hidden class="enter" onclick="task_display_text(2)" >אישור</button>
+<input  hidden type="text" class="task-input" placeholder="שם המבצע">
+<span hidden class="task-display-text">שובץ!</span>
+
+    </div>
+     <div  id="b3"class="task-card">
+<p class="task-title" >לבשל צולנט</p>
+<p class="task-title" >שעה: 9:05 </p>
+<button class="chang" onclick="task_input(3)" >עריכה</button>
+<button hidden class="enter" onclick="task_display_text(3)">אישור</button>
+<input  hidden type="text" class="task-input" placeholder="  שם המבצע">
+<span hidden class="task-display-text">שובץ!</span>
+
+    </div>
+     <div id="b4"  class="task-card">
+<p class="task-title" >לנקות את הבית</p>
+<p class="task-title" >שעה: 9:50</p>
+<button class="chang" onclick="task_input(4)"  >עריכה</button>
+<button hidden class="enter" onclick="task_display_text(4)">אישור</button>
+<input  hidden type="text" class="task-input" placeholder=" שם המבצע">
+<span hidden class="task-display-text">שובץ!</span>
+
+    </div>
+     <div  id="b5"class="task-card">
+<p class="task-title" > להכין מנה אחרונה</p>
+<p class="task-title" >שעה: 11:00</p>
+<button class="chang" onclick="task_input(5)" >עריכה</button>
+<button hidden class="enter" onclick="task_display_text(5)">אישור</button>
+<input  hidden type="text" class="task-input" placeholder="שם המבצע  ">
+<span hidden class="task-display-text">שובץ!</span>
+
+    </div>
+<button id="bg-change-btn" onclick="changcolor()">
+   לשינוי צבע רקע
+</button>
+<input hidden type="color" id="colorPicker"  onchange="color(this.value)">
+
+    <script src="./tooles.js"></script>
+</body>
+</html>

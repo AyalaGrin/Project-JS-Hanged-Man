@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<!-- onload - כאשר הדף נטען -->
+<body onload="drawBackColor()">
+    <h2>עמוד 2</h2>
+    <!-- onsubmit - ארוע שליחת טופס -->
+    <!-- <form onsubmit="addProduct()"> -->
+    <form>
+        <label>שם המוצר</label><input><br>
+        <label>מחיר</label><input type="number"><br>
+        <!-- <input type="submit"> -->
+        <input type="button" onclick="addProduct()" value="הוסף">
+    </form>
+    <a href="./page3.html">עבור לדף המוצרים</a>
+    <script src="./script.js"></script>
+</body>
+
+</html>

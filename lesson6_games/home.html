@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>אתר המשחקים</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-bg">
+    
+    <h1 class="main-title">עולם המשחקים</h1>
+
+    <!-- כרטיס עיצובי מרכזי שמכיל את כל התוכן -->
+    <div class="glass-card">
+        
+       <!-- אזור שבו נציג את שם המשתמש המחובר בעזרת ה-JS -->
+        <div id="user-display">
+            <h2 id="welcome-message">שלום, אורח!</h2>
+        </div>
+        
+        <p class="subtitle">הכיף שלך מתחיל כאן!!</p>
+        
+        <!-- תפריט הכפתורים למשחקים - כל כפתור שולח לפונקציית בדיקה את הנתיב שלו. הפונקציה בודקת אם הוא מחובר כבר. אם כן נכנס למשחק אם לא הודעת שגיאה שצריך להתחבר או להירשם -->
+        <div class="game-menu">
+            <button class="btn-primary" onclick="checkLogin('./trafic_light/רמזור.html')">🚦 משחק הרמזור</button>
+            <button class="btn-primary" onclick="checkLogin('./picturs/משחק תמונות.html')">🖼️ משחק התמונות</button>
+            <button class="btn-primary" onclick="checkLogin('./memory_game/memory_game.html')">🃏 משחק זיכרון</button>
+            <button class="btn-primary" onclick="checkLogin('./איש_תלוי/page.html')">🪢 משחק האיש התלוי</button>
+        </div>
+
+        <!-- כפתורים למשחקים השונים -->
+        <a href="./memory_game/memory_game.html"></a>
+        <a href="./phone/טלפון.html"></a>
+        <a href="./trafic_light/רמזור.html"></a>
+        <a href="./picturs/משחק תמונות.html"></a>
+
+        <!-- קישורי ניווט לדפי ההתחברות וההרשמה -->
+        <a href="./הרשמה.html" class="link-alt">להרשמה</a>
+        <a href="./login.html" class="link-alt">להתחברות</a>
+    </div>
+
+    <!-- חיבור לקובץ גאבה סקריפט -->
+    <script src="./script.js"></script>
+</body>
+</html>
