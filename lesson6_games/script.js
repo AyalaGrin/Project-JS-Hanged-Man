@@ -88,6 +88,7 @@ window.onload = function() {
 
 //------------------- פונקצית ההרשמה-----------------------
 function registerUser() {
+    console.log("registerUser function started");
     // הגדרת משתנים שיהיו שווים לערכים שיש בשדות בטופס ההרשמה
     let name = document.getElementById("name").value;
     let familyName = document.getElementById("family-name").value;
